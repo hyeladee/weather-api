@@ -41,7 +41,6 @@
   </div>
 
   <script>
-    // const apiKey = "4d9b30dfdf7f1c94509d026a35bfa846"; // Replace with your valid API key
 
 document.getElementById("weatherForm").addEventListener("submit", function(e) {
   e.preventDefault();
@@ -52,10 +51,7 @@ document.getElementById("weatherForm").addEventListener("submit", function(e) {
     return;
   }
   
-  // const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&appid=${apiKey}&units=metric`;
-  // console.log("Requesting:", apiUrl); // For debugging
-  
-  const apiUrl = `http://127.0.0.1:8000/weather?city=${encodeURIComponent(city)}`;
+  const apiUrl = `/weather?city=${encodeURIComponent(city)}`;
   console.log("Requesting:", apiUrl); // For debugging
   
   fetch(apiUrl)
