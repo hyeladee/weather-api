@@ -12,7 +12,7 @@ A simple weather dashboard that fetches real-time weather data from the OpenWeat
 
 ## Demo
 
-**Live URL:** *Coming Soon on Render*
+**Live URL:** *[Weather API App](https://weather-api-g6rk.onrender.com)*
 
 ## Project Structure
 
