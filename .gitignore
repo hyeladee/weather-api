@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pkl
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Dependency files
+Pipfile.lock
+poetry.lock
+
+# dotenv (secrets)
+.env
+*.env
+
+# VS Code and IDEs
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Byte-compiled / cache
+*.log
+*.sqlite3
+
+
+# FastAPI specific (if you're using uvicorn reload)
+*.reload
+
+# __test__ or coverage data
+htmlcov/
+.coverage
+.tox/
+.pytest_cache/
+
+# Other
+node_modules/
