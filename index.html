@@ -52,7 +52,6 @@ document.getElementById("weatherForm").addEventListener("submit", function(e) {
   }
   
   const apiUrl = `/weather?city=${encodeURIComponent(city)}`;
-  console.log("Requesting:", apiUrl); // For debugging
   
   fetch(apiUrl)
     .then(response => {
@@ -63,8 +62,7 @@ document.getElementById("weatherForm").addEventListener("submit", function(e) {
       return response.json();
     })
     .then(data => {
-      console.log("Weather data received:", data); // For debugging
-      
+  
       document.getElementById("cityName").textContent = `${data.name}, ${data.sys.country}`;
       document.getElementById("description").textContent = data.weather[0].description;
       document.getElementById("icon").src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
